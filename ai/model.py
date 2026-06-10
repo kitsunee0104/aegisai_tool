@@ -1,35 +1,37 @@
-from sklearn.ensemble import IsolationForest
-import numpy as np
-import joblib
 import os
+import joblib
+import numpy as np
 
-MODEL_PATH = "ai/aegis_model.pkl"
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "aegis_model.pkl")
 
+def train_default_model():
+    from sklearn.ensemble import IsolationForest
 
-def train_model(training_data):
+    model = IsolationForest()
 
-    model = IsolationForest(
-        contamination=0.05,
-        random_state=42
-    )
+    data = np.array([
+        [4, 800, 20, 1, 5],
+        [5, 900, 25, 0, 7],
+        [3, 600, 18, 2, 4],
+        [6, 1200, 30, 1, 9],
+        [5, 1000, 24, 1, 6],
+        [4, 850, 22, 0, 5],
+        [5, 1100, 27, 1, 8]
+    ])
 
-    model.fit(training_data)
-
+    model.fit(data)
     joblib.dump(model, MODEL_PATH)
 
+    print("[+] Initial model trained and saved")
 
 def load_model():
-
     if not os.path.exists(MODEL_PATH):
-        raise Exception("Model not found. Run ai/train.py first.")
+        print("[+] No model found. Initializing AegisAI engine...")
+        train_default_model()
 
     return joblib.load(MODEL_PATH)
 
 
 def predict(sample):
-
     model = load_model()
-
-    sample = np.array(sample).reshape(1, -1)
-
-    return model.predict(sample)[0]
+    return model.predict([sample])[0]
