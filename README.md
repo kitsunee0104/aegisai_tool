@@ -25,22 +25,23 @@
 - cd AegisAI
 
 3. Install Dependencies
-pip install -r requirements.txt
-    OR 
-pip install -e .
+   
+- pip install -r requirements.txt
+- pip install -e .
 
 🚀 CLI Usage
-Basic Scan
+
+1. Basic Scan: 
 **aegisai 127.0.0.1**
 
-Remote Target Scan
+2.Remote Target Scan: 
 **aegisai google.com**
 
 🔐 Privileged Execution (Packet Capture)
 
 Since AegisAI performs packet sniffing, root privileges may be required:
 
-run this command:
+- run this command:
 **sudo env "PATH=$PATH" aegisai 127.0.0.1**
 
 📊 Sample Output
