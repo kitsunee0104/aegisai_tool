@@ -21,14 +21,12 @@
 
 ⚙️ Installation
 1. Clone Repository
-git clone git@github.com:kitsunee0104/aegisai_tool.git
-cd AegisAI
+- git clone:  **https://github.com/kitsunee0104/aegisai_tool.git**
+- cd AegisAI
 
 3. Install Dependencies
 pip install -r requirements.txt
-
-OR 
-
+    OR 
 pip install -e .
 
 🚀 CLI Usage
