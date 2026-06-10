@@ -1,0 +1,10 @@
+# Editable install with no version control (aegisai==1.0.0)
+-e /home/sionnach/Documents/D/nine_sem/AegisAI
+joblib==1.5.3
+narwhals==2.22.1
+numpy==2.4.6
+python-nmap==0.7.1
+scapy==2.7.0
+scikit-learn==1.9.0
+scipy==1.17.1
+threadpoolctl==3.6.0

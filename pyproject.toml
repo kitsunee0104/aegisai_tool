@@ -1,0 +1,21 @@
+[project]
+name = "aegisai"
+version = "1.0.0"
+description = "AI-powered SOC Security Scanner"
+authors = [{ name = "AegisAI" }]
+dependencies = [
+    "numpy",
+    "scikit-learn",
+    "joblib",
+    "scapy"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["ai", "core", "utils"]
+
+[project.scripts]
+aegisai = "core.cli:main"
