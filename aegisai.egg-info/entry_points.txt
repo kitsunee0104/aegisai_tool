@@ -1,2 +1,2 @@
 [console_scripts]
-aegisai = core.cli:main
+aegisai = aegisai_cli.aegisai:main

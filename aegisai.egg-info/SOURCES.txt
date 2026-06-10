@@ -5,6 +5,7 @@ aegisai.egg-info/dependency_links.txt
 aegisai.egg-info/entry_points.txt
 aegisai.egg-info/requires.txt
 aegisai.egg-info/top_level.txt
+aegisai_cli/aegisai.py
 ai/__init__.py
 ai/dataset_loader.py
 ai/model.py

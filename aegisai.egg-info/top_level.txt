@@ -1,3 +1,4 @@
+aegisai_cli
 ai
 core
 utils
