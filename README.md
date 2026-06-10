@@ -17,8 +17,6 @@
 - Machine Learning-based anomaly detection  
 - Risk-driven decision intelligence  
 
-It is designed to replicate how modern SOC pipelines correlate **network signals + behavioral analytics + AI inference** to detect potential threats.
-
 ---
 
 ⚙️ Installation
@@ -44,7 +42,7 @@ Remote Target Scan
 
 Since AegisAI performs packet sniffing, root privileges may be required:
 
-run the below command:
+run this command:
 **sudo env "PATH=$PATH" aegisai 127.0.0.1**
 
 📊 Sample Output
