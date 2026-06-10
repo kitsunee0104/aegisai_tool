@@ -1,9 +1,0 @@
-Metadata-Version: 2.4
-Name: aegisai
-Version: 1.0.0
-Summary: AI-powered SOC Security Scanner
-Author: AegisAI
-Requires-Dist: numpy
-Requires-Dist: scikit-learn
-Requires-Dist: joblib
-Requires-Dist: scapy

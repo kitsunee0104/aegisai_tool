@@ -1,2 +1,0 @@
-[console_scripts]
-aegisai = aegisai_cli.aegisai:main
