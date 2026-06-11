@@ -1,6 +1,6 @@
 # AegisAI
 
-**AegisAI** is an intelligent network security analysis platform that combines network reconnaissance, live traffic monitoring, machine learning-based anomaly detection, and automated risk assessment into a unified command-line interface. It is designed to assist security analysts, penetration testers, and defenders in rapidly identifying suspicious network activity and potential security risks.
+**AegisAI** is an intelligent network security analysis tool that combines network reconnaissance, live traffic monitoring, machine learning-based anomaly detection, and automated risk assessment into a unified command-line interface. It is designed to assist security analysts, penetration testers, and defenders in rapidly identifying suspicious network activity and potential security risks.
 
 ---
 
